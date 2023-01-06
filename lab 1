@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>Registration page</title>
+    </head>
+    <body bgcolor="skyblue">
+       <center> <h1> Registration Form</h1></center>
+       <hr>
+       <br><br><br>
+        <form>
+            <b>Id:</b>  <input type="id" id="Rollno." name="Rollno."/>
+            <br><br>
+            <b>Course:</b> <select name="course" id="course">
+                <option value="CSE">CSE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="CE">CE</option>
+                <option value="IT">IT</option>
+                <option value="Mechanical">Mechanical</option>
+                </select>
+                <br>
+                <br>
+            <b>Gender:</b> 
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female           
+        <br><br>
+            <b>Email:</b>  <input type="email" id="email" name="email"/>    
+        <br><br>  
+        <b>Phone Number:</b>  <input type="email" id="email"/>    
+        <br><br>    
+        <b>Password:</b> <input type="Password" id="pass" name="pass">
+        <br><br>  
+            <b>Confirm password:</b> <input type="Password" id="repass" name="repass"> <br> <br>
+            <input type="checkbox" id="term" name="term" value="term"><b>Agree Term and Condition</b><br>
+            <p>Already have an account? <a href="#">Sign in</a>.</p>  
+<p><input type="button" value="Submit"/>  </p>
+</form>  
+    </body>
+</html>
