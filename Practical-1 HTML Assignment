@@ -1,1 +1,89 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration Form.</title>
+<center>
+<div id="event-registration">
+<h1>Spoural Event Registration</h1>
+<form id="event-registration-form" method="POST" action="">
+
+<fieldset>
+ <h3><u>Personal Information</u></h3>
+ <hr>
+ <br>
+<label for="first-name">First Name : </label>
+<input type="text" id="first-name" name="first-name" />
+<br>
+<br>
+<label for="last-name">Last Name : </label>
+<input type="text" id="last-name" name="last-name" />
+<br>
+<br>
+Gender :
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female           
+        <br><br>
+<label for="email">Email : </label>
+<input type="email" id="email" name="email" />
+<br>
+<br>
+<label for="id">College id : </label>
+<input type="text" id="Collegeid" name="Collegeid" />
+<br>
+<br>
+<label for="Phno">Phone No : </label>
+<input type="text" id="unit" name="unit" />
+<br>
+<br>
+<label for="dep"> Department : </label>
+<input type="text" id="dep" name="dep" />
+<br>
+<br>
+<label for="brc"> Branch : </label>
+<input type="text" id="branch" name="branch" />
+<br>
+<br>
+<label for="sem"> Semester : </label>
+<select name="sem" id="sem">
+    <option value="1">1</option>
+    <option value="4">4</option>
+    <option value="6">6</option>
+    <option value="8">8</option>
+    </select>
+    <br><br>
+<label for="tra"> Traveling From : </label>
+            <input type="radio" name="TRAVEL" value="travel"> Hostel / Near by areas
+            <input type="radio" name="TRAVEL" value="travel"> Up - Down 
+    <br>
+    <br>
+    <hr>
+   <b> Interested Event :</b><br>
+<input type="checkbox" name="1">One minute game 
+<input type="checkbox" name="2">Group Dance
+<input type="checkbox" name="3">Solo Dance
+<input type="checkbox" name="4">Fashion Show
+<input type="checkbox" name="5">Mr And Mrs Charusat
+<input type="checkbox" name="6">one act play
+<input type="checkbox" name="7">Debate
+<input type="checkbox" name="8">Rangoli
+<br>
+<input type="checkbox" name="9">Mehndi
+<input type="checkbox" name="10">Sports
+<input type="checkbox" name="11">Ad making
+<input type="checkbox" name="12">Spot Photography
+<input type="checkbox" name="13">Quiz
+<input type="checkbox" name="14">Skit
+
+<br>
+<br>
+
+<button type="button">Submit Form</button>
+
+</div>
+</center>
+</head>
+
+</body>
+</html>
