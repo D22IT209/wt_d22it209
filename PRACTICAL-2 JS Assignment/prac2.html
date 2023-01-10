@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <input type="text" id="num1">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="text" id="num2">
+    <button onclick="calculate()">Calculate</button>
+    <p>Result: <span id="result"></span></p>
+  </body>
+
+  <script>
+    function calculate() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var operator = document.getElementById("operator").value;
+      var num2 = parseFloat(document.getElementById("num2").value);
+
+      if (operator === "+") {
+        document.getElementById("result").innerHTML = num1 + num2;
+      } else if (operator === "-") {
+        document.getElementById("result").innerHTML = num1 - num2;
+      } else if (operator === "*") {
+        document.getElementById("result").innerHTML = num1 * num2;
+      } else if (operator === "/") {
+        document.getElementById("result").innerHTML = num1 / num2;
+      } else {
+        document.getElementById("result").innerHTML = "Invalid operator";
+      }
+    }
+  </script>
+  <script src = "prac2.js"></script>
+</html>

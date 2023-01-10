@@ -1,0 +1,15 @@
+<html>
+    <body>
+      <input type="text" id="inputCelsius">
+      <button onclick="convert()">Convert</button>
+      <p>Result: <span id="outputFahrenheit"></span>°F</p>
+  
+      <script>
+        function convert() {
+          var celsius = parseFloat(document.getElementById("inputCelsius").value);
+          var fahrenheit = (celsius * 9/5) + 32;
+          document.getElementById("outputFahrenheit").innerHTML = fahrenheit.toFixed(2);
+        }
+      </script>
+    </body>
+    </html>
