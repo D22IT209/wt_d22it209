@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiplication Table</title>
+</head>
+<body>
+<h1>Multiplication Table</h1>
+<h3>Dhaval Patil(D22IT209)</h3>
+<script src = "./table.js"></script>
+<table id="tab">
+<td>
+<tr>
+<label for="rows">Number of Rows:</label>
+<input type="number" id="rows" min="1"
+value="10"></input><BR><BR>
+</tr>
+<tr>
+<label for="cols">Number of Columns:</label>
+<input type="number" id="cols" min="1"
+value="10"></input><BR><BR>
+</tr>
+<tr>
+<button onclick="generateTable()">Generate Table</button>
+</tr>
+</td>
+</table>
+<div id="table"></div>
+</body>
+</html>
