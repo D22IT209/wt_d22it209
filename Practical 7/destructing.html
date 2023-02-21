@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destructuring Example</title>
+</head>
+<body>
+<h1>Destructuring Example</h1>
+<p>Open the browser console to see the result.</p>
+<script>
+    // Using destructuring to extract values from an object
+const user = {
+name: "John Doe",
+age: 30,
+email: "john.doe@example.com"
+};
+const {name, age, email} = user;
+console.log(name);
+console.log(age);
+console.log(email);
+// Using destructuring to extract values from an array
+const numbers = [1, 2, 3, 4, 5];
+const [first, second, , fourth, fifth] = numbers;
+console.log(first);
+console.log(second);
+console.log(fourth);
+console.log(fifth);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrow Function Example</title>
+</head>
+<body>
+<h1>Arrow Function Example</h1>
+<p>Click the button to see the result:</p>
+<button onclick="calculate()">Calculate</button>
+<p id="result"></p>
+<script>
+// Using arrow functions to calculate the sum and product of two numbers
+const sum = (num1, num2) => num1 + num2;
+const product = (num1, num2) => num1 * num2;
+function calculate() {
+const num1 = 5;
+const num2 = 10;
+document.getElementById("result").innerHTML = `The sum of
+${num1} and ${num2} is ${sum(num1, num2)}.<br>The product of ${num1} and ${num2}
+is ${product(num1, num2)}.`;
+}
+</script>
+</body>
+</html>

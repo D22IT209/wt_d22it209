@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Rest Operator Example</title>
+</head>
+<body>
+<h1>Rest Operator Example</h1>
+<p>Enter any number of arguments in the input field and click the "Calculate
+Sum" button.</p>
+<input type="text" id="args" placeholder="Enter arguments separated by
+commas">
+<button id="calculate-sum">Calculate Sum</button>
+<p>The sum is: <span id="result"></span></p>
+<script>
+// Using the rest operator to calculate the sum of an arbitrary number of
+arguments
+const calculateSum = (...args) => {
+return args.reduce((acc, curr) => acc + curr, 0);
+};
+const calculateSumButton = document.getElementById("calculate-sum");
+calculateSumButton.addEventListener("click", () => {
+const args = document.getElementById("args").value.split(",");
+const sum = calculateSum(...args);
+const resultElement = document.getElementById("result");
+resultElement.textContent = sum;
+});
+</script>
+</body>
+</html>
